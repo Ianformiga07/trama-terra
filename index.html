@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trama Terra – Artesanato com Alma</title>
+
+    <!-- Ícones & Fontes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+    <!-- Estilos da loja -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- ═══════════════ HEADER ═══════════════ -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="logo-wrap">🧶</div>
+        <h1 class="header-title">Trama <span>Terra</span></h1>
+        <p class="header-subtitle">Artesanato com Alma · Feito à Mão com Amor</p>
+        <div class="header-badges">
+          <span class="badge-pill open"><span class="status-dot"></span> Loja Aberta</span>
+          <span class="badge-pill"><i class="fas fa-truck"></i> Envio p/ Todo Brasil</span>
+          <span class="badge-pill"><i class="fas fa-heart"></i> 100% Artesanal</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ═══════════════ NAV DE CATEGORIAS ═══════════════ -->
+    <nav class="cat-nav">
+      <div class="cat-nav-inner">
+        <button class="cat-tab active" onclick="scrollToSection('cocas')">🎀 Cocás</button>
+        <button class="cat-tab"        onclick="scrollToSection('crochet')">🧶 Crochê</button>
+      </div>
+    </nav>
+
+    <!-- ═══════════════ MENU PRINCIPAL ═══════════════ -->
+    <main id="menu">
+
+      <!-- ── COCÁS ARTESANAIS ── -->
+      <section class="menu-section" id="cocas">
+        <div class="section-header">
+          <div class="section-icon">🎀</div>
+          <h2 class="section-title">Cocás Artesanais</h2>
+          <hr class="section-divider" />
+        </div>
+        <p class="section-desc">Feitos à mão com materiais de alta qualidade. Até 3 cores disponíveis por peça.</p>
+
+        <div class="products-grid">
+
+          <div class="product-card">
+            <div class="product-img-placeholder">🎀</div>
+            <div class="product-body">
+              <h3 class="product-name">Cocá Simples</h3>
+              <p class="product-desc">Delicado, leve e perfeito para o dia a dia. Elástico macio e confortável.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 18,00</span>
+                <button class="add-btn add-td-cart-btn"
+                  data-name="Cocá Simples" data-price="18.00"
+                  data-colors='["Rosa","Azul Bebê","Lilás","Branco","Amarelo","Verde Menta","Coral","Pêssego"]'
+                  data-max-colors="2">
+                  <i class="fas fa-plus"></i> Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-placeholder">🌸</div>
+            <div class="product-body">
+              <h3 class="product-name">Cocá com Flor</h3>
+              <p class="product-desc">Com florzinha bordada à mão. Delicado e muito fofo para bebês e crianças.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 32,00</span>
+                <button class="add-btn add-td-cart-btn"
+                  data-name="Cocá com Flor" data-price="32.00"
+                  data-colors='["Rosa","Branco","Lilás","Azul Claro","Pêssego","Coral"]'
+                  data-max-colors="2">
+                  <i class="fas fa-plus"></i> Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-placeholder">✨</div>
+            <div class="product-body">
+              <h3 class="product-name">Cocá Luxo com Pérola</h3>
+              <p class="product-desc">Com pérolas aplicadas à mão. Para ocasiões especiais e aniversários.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 45,00</span>
+                <button class="add-btn add-td-cart-btn"
+                  data-name="Cocá Luxo com Pérola" data-price="45.00"
+                  data-colors='["Branco","Champagne","Rosa Antigo","Nude"]'
+                  data-max-colors="1">
+                  <i class="fas fa-plus"></i> Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-placeholder">🎀</div>
+            <div class="product-body">
+              <h3 class="product-name">Cocá Temático</h3>
+              <p class="product-desc">Personalizado com tema a escolher. Festa, safari, princesa e muito mais!</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 38,00</span>
+                <button class="add-btn add-td-cart-btn"
+                  data-name="Cocá Temático" data-price="38.00"
+                  data-colors='["Rosa","Azul","Verde","Vermelho","Amarelo","Roxo"]'
+                  data-max-colors="3">
+                  <i class="fas fa-plus"></i> Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-placeholder">🎀</div>
+            <div class="product-body">
+              <h3 class="product-name">Kit 3 Cocás</h3>
+              <p class="product-desc">Trio especial com 3 cocás iguais ou diferentes. Perfeito como lembrancinha.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 48,00</span>
+                <button class="add-btn add-td-cart-btn"
+                  data-name="Kit 3 Cocás" data-price="48.00"
+                  data-colors='["Rosa","Azul Bebê","Lilás","Branco","Amarelo","Verde"]'
+                  data-max-colors="3">
+                  <i class="fas fa-plus"></i> Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── PEÇAS EM CROCHÊ ── -->
+      <section class="menu-section" id="crochet">
+        <div class="section-header">
+          <div class="section-icon">🧶</div>
+          <h2 class="section-title">Peças em Crochê</h2>
+          <hr class="section-divider" />
+        </div>
+        <p class="section-desc">Tricotado à mão com fios selecionados. Durabilidade e delicadeza em cada nó.</p>
+
+        <div class="products-grid">
+
+          <div class="product-card">
+            <div class="product-img-placeholder">👜</div>
+            <div class="product-body">
+              <h3 class="product-name">Bolsa de Crochê</h3>
+              <p class="product-desc">Bolsa artesanal, resistente e estilosa. Várias cores de fio disponíveis.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 85,00</span>
+                <button class="add-btn add-td-cart-btn"
+                  data-name="Bolsa de Crochê" data-price="85.00"
+                  data-colors='["Natural","Terracota","Azul Jeans","Preto","Branco","Caramelo"]'
+                  data-max-colors="2">
+                  <i class="fas fa-plus"></i> Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-placeholder">🧣</div>
+            <div class="product-body">
+              <h3 class="product-name">Cachecol de Crochê</h3>
+              <p class="product-desc">Macio, quente e cheio de charme. Fio antialérgico de alta qualidade.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 65,00</span>
+                <button class="add-btn add-td-cart-btn"
+                  data-name="Cachecol de Crochê" data-price="65.00"
+                  data-colors='["Cinza","Vinho","Caramelo","Azul Marinho","Creme","Verde Militar"]'
+                  data-max-colors="2">
+                  <i class="fas fa-plus"></i> Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-placeholder">🌺</div>
+            <div class="product-body">
+              <h3 class="product-name">Porta-Copo Floral</h3>
+              <p class="product-desc">Conjunto de 4 porta-copos com motivo floral. Protege a mesa com elegância.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 35,00</span>
+                <button class="add-btn add-td-cart-btn"
+                  data-name="Porta-Copo Floral (jg 4)" data-price="35.00"
+                  data-colors='["Branco","Creme","Rosa","Azul Claro","Verde Sage"]'
+                  data-max-colors="2">
+                  <i class="fas fa-plus"></i> Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-placeholder">🧸</div>
+            <div class="product-body">
+              <h3 class="product-name">Amigurumi Personalizado</h3>
+              <p class="product-desc">Boneco em crochê feito sob encomenda. Animais, personagens e muito mais!</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 95,00</span>
+                <button class="add-btn add-td-cart-btn"
+                  data-name="Amigurumi Personalizado" data-price="95.00"
+                  data-colors='["Bege","Marrom","Cinza","Branco","Colorido","Rosa"]'
+                  data-max-colors="3">
+                  <i class="fas fa-plus"></i> Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-placeholder">🎨</div>
+            <div class="product-body">
+              <h3 class="product-name">Quadro em Crochê</h3>
+              <p class="product-desc">Arte em crochê emoldurada. Decoração única e artesanal para a sua casa.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 120,00</span>
+                <button class="add-btn add-td-cart-btn"
+                  data-name="Quadro em Crochê" data-price="120.00"
+                  data-colors='["Neutros","Terrosos","Azuis","Rosas","Colorido"]'
+                  data-max-colors="3">
+                  <i class="fas fa-plus"></i> Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-placeholder">🌀</div>
+            <div class="product-body">
+              <h3 class="product-name">Tapete em Crochê</h3>
+              <p class="product-desc">Tapete artesanal redondo ou retangular. Toque macio e design exclusivo.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 150,00</span>
+                <button class="add-btn add-td-cart-btn"
+                  data-name="Tapete em Crochê" data-price="150.00"
+                  data-colors='["Natural/Creme","Terracota/Creme","Preto/Branco","Azul/Branco","Rosa/Branco"]'
+                  data-max-colors="2">
+                  <i class="fas fa-plus"></i> Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="site-footer">
+      <button class="footer-history-btn" onclick="openHistoryModal()">
+        <i class="fas fa-history"></i> Meus Pedidos
+      </button>
+      <br />
+      <span>© 2025 Trama Terra · Feito com 🧶 e muito amor</span>
+    </footer>
+
+    <!-- ═══════════════ BOTÃO FLUTUANTE DO CARRINHO ═══════════════ -->
+    <button class="cart-fab" id="cart-btn">
+      <i class="fas fa-shopping-basket"></i>
+      <span>Carrinho</span>
+      <span class="cart-badge" id="cart-count">0</span>
+    </button>
+
+    <!-- ═══════════════ MODAL – SELEÇÃO DE CORES ═══════════════ -->
+    <div class="modal-overlay" id="color-modal">
+      <div class="modal-sheet" style="max-width:440px">
+        <div class="modal-header">
+          <h2 class="modal-title">Escolha as Cores</h2>
+          <button class="modal-close" id="color-modal-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="color-modal-body">
+          <div class="color-product-preview">
+            <span class="preview-icon" id="color-product-icon">🎀</span>
+            <div>
+              <div class="preview-name"  id="color-product-name">Produto</div>
+              <div class="preview-price" id="color-product-price">R$ 0,00</div>
+            </div>
+          </div>
+          <div class="color-section-label" id="color-max-label">Selecione até 1 cor</div>
+          <div class="color-chips-wrap" id="color-chips"></div>
+          <div class="color-selected-hint" id="color-selected-hint">Nenhuma cor selecionada</div>
+          <div class="color-section-label" style="margin-top:0.5rem">Observações (opcional)</div>
+          <textarea class="obs-textarea" id="color-obs"
+            placeholder="Ex: Tamanho P, nome bordado, urgência, tema específico..."></textarea>
+          <div class="color-modal-actions">
+            <button class="btn-cancel" id="color-cancel-btn">Cancelar</button>
+            <button class="btn-confirm" id="color-confirm-btn">
+              <i class="fas fa-basket-shopping"></i> Adicionar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════ MODAL – CARRINHO ═══════════════ -->
+    <div class="modal-overlay" id="cart-modal">
+      <div class="modal-sheet" style="max-width:520px">
+        <div class="modal-header">
+          <h2 class="modal-title">
+            🧺 Meu Carrinho
+            <span id="cart-count-modal" style="font-size:0.85rem;color:var(--text-muted);font-family:'Lato',sans-serif;">0 itens</span>
+          </h2>
+          <button class="modal-close" id="close-modal-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-body">
+          <div id="cart-items"></div>
+
+          <div class="cart-total-row">
+            <span class="cart-total-label">Total</span>
+            <span class="cart-total-value" id="cart-total">R$ 0,00</span>
+          </div>
+
+          <!-- Dados do Cliente -->
+          <div class="form-section">
+            <div class="form-section-title">Seus Dados</div>
+            <input type="text"  class="form-input" id="customer-name"  placeholder="Nome completo" />
+            <p class="form-warn" id="customer-name-warn"><i class="fas fa-exclamation-circle"></i> Digite seu nome</p>
+            <div class="form-row">
+              <input type="tel"   class="form-input" id="customer-phone" placeholder="WhatsApp / Celular" style="margin-bottom:0" />
+              <input type="email" class="form-input" id="customer-email" placeholder="E-mail"             style="margin-bottom:0" />
+            </div>
+            <p class="form-warn" id="customer-phone-warn"><i class="fas fa-exclamation-circle"></i> Digite seu WhatsApp</p>
+          </div>
+
+          <!-- Entrega -->
+          <div class="form-section">
+            <div class="form-section-title">Entrega</div>
+            <div class="shipping-opts">
+              <div class="ship-opt selected" id="ship-correios" onclick="selectShipping('correios')">
+                <span class="ship-icon">📦</span>Correios
+              </div>
+              <div class="ship-opt" id="ship-motoboy" onclick="selectShipping('motoboy')">
+                <span class="ship-icon">🛵</span>Motoboy Local
+              </div>
+              <div class="ship-opt" id="ship-retirada" onclick="selectShipping('retirada')">
+                <span class="ship-icon">🏡</span>Retirar
+              </div>
+            </div>
+
+            <div id="address-block">
+              <input type="text" class="form-input" id="cep-input" placeholder="CEP (ex: 77000-000)"
+                style="margin-bottom:0.5rem" oninput="formatCEP(this)" />
+              <p class="form-warn" id="cep-warn"><i class="fas fa-exclamation-circle"></i> Digite seu CEP</p>
+              <input type="text" class="form-input" id="address-street" placeholder="Rua / Avenida" style="margin-bottom:0.5rem" />
+              <div class="form-row" style="margin-bottom:0.5rem">
+                <input type="text" class="form-input" id="address-num"  placeholder="Número"      style="margin-bottom:0" />
+                <input type="text" class="form-input" id="address-comp" placeholder="Complemento" style="margin-bottom:0" />
+              </div>
+              <input type="text" class="form-input" id="address-bairro" placeholder="Bairro" style="margin-bottom:0.5rem" />
+              <div class="form-row">
+                <input type="text" class="form-input" id="address-city"  placeholder="Cidade"      style="margin-bottom:0" />
+                <input type="text" class="form-input" id="address-state" placeholder="Estado (UF)" style="margin-bottom:0" maxlength="2" />
+              </div>
+              <p class="form-warn" id="address-warn"><i class="fas fa-exclamation-circle"></i> Preencha o endereço completo</p>
+            </div>
+          </div>
+
+          <!-- Pagamento -->
+          <div class="form-section">
+            <div class="form-section-title">Pagamento</div>
+            <div class="pay-opts">
+              <div class="pay-opt selected" id="btn-pix"      onclick="selectPayment('pix')">💠 Pix</div>
+              <div class="pay-opt"          id="btn-cartao"   onclick="selectPayment('cartao')">💳 Cartão</div>
+              <div class="pay-opt"          id="btn-deposito" onclick="selectPayment('deposito')">🏦 Depósito</div>
+            </div>
+            <div id="change-area" style="display:none">
+              <input type="number" class="form-input" id="change-value" placeholder="Valor que vai pagar (para troco)" min="0" step="0.01" />
+              <div class="change-info-msg" id="change-info"></div>
+            </div>
+          </div>
+
+          <button class="checkout-btn" id="checkout-btn">
+            <i class="fab fa-whatsapp" style="font-size:1.2rem"></i> Finalizar pelo WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════ MODAL – HISTÓRICO DE PEDIDOS ═══════════════ -->
+    <div class="modal-overlay" id="history-modal">
+      <div class="modal-sheet" style="max-width:520px">
+        <div class="modal-header">
+          <h2 class="modal-title">📋 Meus Pedidos</h2>
+          <button class="modal-close" id="history-modal-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="history-body">
+          <div id="history-list"></div>
+          <button class="history-clear-btn" onclick="clearHistory()">
+            <i class="fas fa-trash-alt"></i> Limpar Histórico
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script da loja -->
+    <script src="script.js"></script>
+  </body>
+</html>
