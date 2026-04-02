@@ -924,8 +924,8 @@ a {
 /* Mobile: galeria com altura proporcional (não fixa) */
 @media (max-width: 639px) {
   .pm-gallery {
-    /* aspect-ratio garante que a imagem mostre bem sem travar o scroll */
-    aspect-ratio: 4 / 3;
+    /* aspect-ratio 3/4 (retrato) mostra a imagem completa no mobile */
+    aspect-ratio: 3 / 4;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -954,6 +954,14 @@ a {
   height: 100%;
   object-fit: cover;
   transition: opacity 0.18s ease;
+}
+
+/* Mobile: mostrar imagem completa sem cortar */
+@media (max-width: 639px) {
+  .pm-main-img {
+    object-fit: contain;
+    background: var(--cream-dk);
+  }
 }
 
 /* Mobile: garantir que pm-main-wrap ocupe o espaço correto */
@@ -1267,7 +1275,7 @@ a {
 .form-section {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 1rem;
 }
 .form-section-title {
   font-size: 0.55rem;
@@ -1306,7 +1314,7 @@ a {
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.6rem;
+  gap: 1rem;
 }
 .form-warn {
   font-size: 0.65rem;
