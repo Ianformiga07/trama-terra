@@ -460,8 +460,8 @@
           catLabel: "Escultura de Parede",
           name: "Escultura de parede Império",
           desc: "Em manta e pedras e madeira nobre. 36×118 cm. Uma peça monumental que redefine a parede como elemento vivo — presença que cresce com o tempo.",
-          price: 0,
-          priceStr: "Sob consulta",
+          price: 1890,
+          priceStr: "R$ 1.890,00",
           images: [
             "assets/img/img1.jpeg",
             "assets/img/img2.jpeg",
@@ -474,8 +474,8 @@
           catLabel: "Escultura de Parede",
           name: "Escultura de parede Elos",
           desc: "Em seda primitiva e pedra natural Ágata. Cada anel carrega a memória da pedra e a delicadeza do fio — elos entre o natural e o contemporâneo.",
-          price: 0,
-          priceStr: "Sob consulta",
+          price: 1650,
+          priceStr: "R$ 1.650,00",
           images: [
             "assets/img/img4.jpeg",
             "assets/img/img5.jpeg",
@@ -488,8 +488,8 @@
           catLabel: "Escultura de Parede",
           name: "Escultura de parede Têxtil",
           desc: "Em madeira nobre e sementes naturais. 45×118 cm. Texturas sobrepostas formam uma narrativa visual que revela novos detalhes a cada olhar.",
-          price: 0,
-          priceStr: "Sob consulta",
+          price: 1750,
+          priceStr: "R$ 1.750,00",
           images: [
             "assets/img/img7.jpeg",
             "assets/img/img8.jpeg",
@@ -503,8 +503,8 @@
           catLabel: "Escultura Cúpula",
           name: "Cúpula Clareza Mental",
           desc: "Sodalita, quartzo branco leitoso, selenita banhada, seda pura. 22×12×15 cm. Uma composição de pedras que convida à contemplação e ao silêncio interior.",
-          price: 0,
-          priceStr: "Sob consulta",
+          price: 680,
+          priceStr: "R$ 680,00",
           images: [
             "assets/img/img10.jpeg",
             "assets/img/img11.jpeg",
@@ -517,8 +517,8 @@
           catLabel: "Escultura Cúpula",
           name: "Cúpula Calma",
           desc: "Jadeita, quartzo banhado, ágata. 12×12×15 cm. A harmonia das pedras em pequeno formato — presença concentrada para ambientes que pedem equilíbrio.",
-          price: 0,
-          priceStr: "Sob consulta",
+          price: 520,
+          priceStr: "R$ 520,00",
           images: [
             "assets/img/img13.jpeg",
             "assets/img/img14.jpeg",
@@ -532,8 +532,8 @@
           catLabel: "Cocar Têxtil",
           name: "Cocar Têxtil Floresta G",
           desc: "Produzido artesanalmente com materiais naturais selecionados à mão. O tamanho G traz imponência e beleza — uma peça de decoração ou uso ritual de impacto único.",
-          price: 0,
-          priceStr: "Sob consulta",
+          price: 380,
+          priceStr: "R$ 380,00",
           images: ["assets/img/img16.jpeg", "assets/img/img17.jpeg"],
         },
         {
@@ -542,8 +542,8 @@
           catLabel: "Cocar Têxtil",
           name: "Cocar Têxtil Capim Dourado",
           desc: "Confeccionado com capim dourado do Jalapão — fibra endêmica do Tocantins. Leveza, cor e textura únicas que só a natureza é capaz de criar.",
-          price: 0,
-          priceStr: "Sob consulta",
+          price: 290,
+          priceStr: "R$ 290,00",
           images: ["assets/img/img18.jpeg", "assets/img/img19.jpeg"],
         },
       ];
@@ -702,7 +702,7 @@
         for (let i = 0; i < pmQty; i++) {
           addToCart({
             name: currentProduct.name,
-            price: 0,
+            price: currentProduct.price,
             priceStr: currentProduct.priceStr,
             obs: i === 0 ? obs : "",
             colors: [],
